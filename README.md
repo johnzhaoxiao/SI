@@ -30,10 +30,12 @@ def calculate_eer_auc_ap(label,distance):
     EER = intersect_x
     return EER,fpr, tpr
 ```
-###### fpr 假阳率（False Position Rate）:
+##### fpr 假阳率（False Position Rate）:
   其含义是检测出来的假阳性样本除以所有真实阴性样本数
-###### tpr 真阳率（True Position Rate）:
+##### tpr 真阳率（True Position Rate）:
   其含义是检测出来的真阳性样本数除以所有真实阳性样本数
-###### 因此：
+##### 因此：
+```
 R_fa = fpr
 R_fr = 1-tpr
+```
