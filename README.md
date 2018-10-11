@@ -14,5 +14,10 @@ take a chance about SI
 - ivecter+PLDA/CDS
 - GMM+SVM
 - d-vecter
-#### 
-声纹识别的评价指标主要为EER，叫作等错误率
+
+声纹识别的评价指标主要为EER，叫作等错误率。由错误接受率（不是真人的声音，但是却接受了）和错误拒绝率（是真人声音但拒绝了）构成。取两者绘图的曲线交点值作为评价指标， 此值越少，说明模型越好
+#### 等错误率EER:
+R_fa = Number of False Acceptance / Number of impostors accesses     接受假冒者而造成的错误率  
+R_fr = Number of False Rejection / Number of target accesses         拒绝真实的说话人而造成的错误率  
+EER : R_fa = R_fr
+
